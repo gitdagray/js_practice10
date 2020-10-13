@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Assignment 10</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.1.1/mocha.css"
+      integrity="sha512-Ytt2foRGKdIInPXwyS3gxRvfTv4n2wi7uB7neCLH1LjExT+PKBeQu6LNVB4QpHaJqx7m2btagBs4kqxYC1QNFg=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section id="myPage" style="margin: 60px">
+      <p class="even">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sequi obcaecati qui mollitia excepturi in nesciunt. 
+      </p>
+      <p class="odd">
+        Eaque reprehenderit animi autem, hic veritatis consectetur excepturi ipsum cum amet vel eveniet aliquid.
+      </p>
+      <ul>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+      <p class="even">
+        Est eligendi esse in itaque, animi modi accusantium, eaque laborum, harum ipsam excepturi obcaecati quaerat adipisci quas temporibus?
+      </p>
+      <table id="myTable">
+        <tbody>
+          <tr>
+            <td>one</td>
+            <td>two</td>
+          </tr>
+          <tr>
+            <td>three</td>
+            <td>four</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="odd">
+        Vero nostrum voluptatum error! Quis perspiciatis, alias commodi rem mollitia deleniti praesentium!
+      </p>
+      <ul>
+        <li>NodeJS</li>
+        <li>PHP</li>
+        <li>Python</li>
+      </ul>
+      <hr>
+    </section>
+    <section id="tests">
+      <div class="directions">
+        <p>
+          <span id="reloadPage">Refresh this page</span> to see your score update
+          after you have made changes to your Javascript code in the main.js file.
+        </p>
+        <p>
+          When you are ready to submit your assignment, click the submit button.
+        </p>
+        <button id="submitButton">Submit Your Assignment</button>
+      </div>
+      <div id="mocha"></div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.1.1/mocha.min.js"
+      integrity="sha512-vOMXB+Rjob/NIG88cgEK+t6Uuf0zJIzQrfKH8VFc7AW18y/rzszRXaKPNAPf1ePv2hQ3eYR8yEu4S85Np3DhLA=="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/chai/4.2.0/chai.min.js"
+      integrity="sha512-x3BwhuxT44pOQZanacQyDnrB2r1L1AUfjUaefYArTHR9sHEvvy3NSnnm5Z7GAl5YPc3+GEWFT0S34obDSzUvaQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      mocha.setup("bdd");
+    </script>
+    <script src="main.js"></script>
+    <script src="./test/practice10Test.min.js"></script>
+    <script>
+      mocha.run();
+    </script>
+    <script src="./js/util.min.js"></script>
+  </body>
+</html>
