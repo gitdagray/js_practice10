@@ -25,8 +25,8 @@ given in the comments.
 // 4) Define a function named createBorders that selects
 // the table inside the "myPage" section. The function
 // should add a CSS border to the table cells that is
-// 2 pixels thick and solid black. The function should
-// also return the table element.
+// 2 pixels thick and solid black (use #000 for black).
+// The function should also return the table element.
 ////////////
 // Hint: You can build a selector from the result
 // of another selector.
